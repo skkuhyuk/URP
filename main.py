@@ -9,7 +9,7 @@ from torch.utils.data import Dataset as dset
 from scipy.io import loadmat
 from scipy import io
 import torchvision.models as models
-
+from simsiam import SimSiam
 #1장만 가져와서 변화를 확인하는 코드입니다. 뭐가 문제인지 잘 모르겠습니다...
 ########### Masker & Hyperparam ###################
 kernel = torch.Tensor([[0.0, 1.0, 0.0], [1.0, 0.0, 1.0], (0.0, 1.0, 0.0)])
