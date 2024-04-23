@@ -65,7 +65,7 @@ for epoch in range(epochs_num):
 
     model.train()
     #########데이터 불러오기&전처리##################
-    image = mydataset('train_imgs.mat')
+    image = mydataset('data/train_imgs.mat')
     train_loader = DataLoader(image, batch_size=1, shuffle=True, num_workers=1, drop_last=False)
     dirty_image = load_image(image)
     m = torch.nn.ReflectionPad2d(1)
